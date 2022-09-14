@@ -1,0 +1,283 @@
+EXTENCIONES HTML--VISUAL STUDIO CODE
+#####################################
+
+*open in browser
+*HTML End Tag Labels
+*Auto Rename Tag
+*indent-rainbow
+*Live Server
+
+
+https://github.com/Open-Bootcamp/HTML-CSS
+
+#####################################################
+
+ETIQUETA VIDEO HTML
+______________________________
+
+<video width="300" height="300" controls autoplay muted loop>
+	<source src="Intro.mp4" type="video/mp4"/>
+</video>
+
+____________________________________________________________
+
+CSS ETIQUETAS
+
+display: inline-block  -->>permite modificar width, height
+float: right -->>derecha
+float: left -->>izquierda
+justify-content: --->>coloca cualquier contenido en la posisicion que se desee
+flex-wrap:  --->>Redimensiona cualquier elemento
+flex-direccion: -->>le da direccion
+gap: 15px  --->>>genera un espacio
+
+______________________________________________________
+
+POSICIONAMIENTO HTML
+
+<div class="static">Hola </div>
+<div class="relative">Hola </div>   -->> Se posiciona en relación al posicionamiento original.
+<div class="fixed">Hola </div>	   -->> Siempre se mantiene fijo a la pantalla, asi hagamos un scroll.
+<div class="absolute">Hola </div>   -->> Se puede usar dentro de un relative 
+Ejm:___________________________________
+<div class="relative contenedor">Hola 
+	<div class="absolute"> Hola </div>
+</div> 
+_______________________________________________
+<div class="sticky"> Hola </div>  -->> Se mantiene en la posicion que yo quiera pegarlo, al hacer scroll modifica su posicionamiento
+
+________________________________________________________________________________________________________________________________________
+
+FLEXBOX			https://codepen.io/enxaneta/full/adLPwv
+
+<div class="flex"> 
+	<div class="contenido-1"> </div>
+</div>
+
+_____________________________________________________
+
+OVERFLOW
+
+<div class="contenedor-hidden"> </div>
+.contenedor-hidden {
+	overflow: hidden;
+}
+
+############################
+
+<div class="contenedor-scroll"> </div>
+.contenedor-scroll {
+	overflow: scroll;
+}
+
+############################
+
+<div class="contenedor-visible"> </div>
+.contenedor-visible {
+	overflow: visible;
+}
+
+############################
+
+<div class="contenedor-auto"> </div>
+.contenedor-auto {
+	overflow: auto;
+}
+
+_______________________________________________________
+
+PSEUDOCLASES
+		https://www.w3schools.com/css/css_pseudo_classes.asp
+
+<div class="listado">
+	<p>Parrafo 1</p>
+	<p>Parrafo 2</p>
+	<p>Parrafo 3</p>
+</div>
+
+.listado p:first-child { -->>Hace referencia al primer elemento del listado 
+	color: white;
+}
+
+#######################################
+
+ENLACES
+
+<div class="enlaces">
+	<a href="http://google.com" target="_blank">Enlace  de Google</a>
+</div>
+
+a:link {	-->>No visitados
+	color: 
+}
+
+a:visited {	-->>Visitados
+	color: 
+}
+
+a:hover {
+	color: 
+}
+
+a:active {	-->>Al dejar presionado
+	color: 
+}
+
+___________________________________________________________________________________
+
+
+PSEUDOELEMENTOS (se llaman en el CSS con ::)
+
+<div class="contenedor">
+	<p><span class="frase">En medio de la dificultad reside la oportunidad</span> - Albert Einsten</p>
+</div>
+
+span.frase {
+	font-style: italic;
+}
+
+span.frase::before {
+	content: '<< ';
+	font-size: xx-small;
+}
+
+span.frase::after {
+	content: ' >>';
+	font-size: xx-small;
+}
+
+##############################################
+
+<div class="libro">
+	<p> parrafo </p>
+</div>
+
+.libro p::first-letter {	-->>hace referencia a la primera letra del parrafo
+	font-size: xx-large;
+}
+
+.libro p::first-line {	-->>hace referencia a la primera linea del parrafo
+	color: white;
+}
+
+.libro p::selection {	-->>hace referencia cuando seleccion algo del parrafo
+	background-color: Red;
+	color: green;
+}
+
+###############################################################
+
+<div class="listado">
+	<ul>
+	 <li>Nombre 1</li>
+	 <li>Nombre 2</li>
+	 <li>Nombre 3</li>
+	</ul>
+
+.listado ul li::market {	-->>me marca el * de cada lista
+	color: red;
+}
+
+_____________________________________________________________________________________________
+
+
+##########---Forma de acceder a los input---####################
+
+.input[type="password"] {
+	color: red;
+}
+
+#################################################################
+
+.input-moderno {
+	border: none;
+	border-bottom: 1px solid #c2c2c2;
+	outline: none;
+	padding: 5px;
+	COLOR: #5f5f5f;
+}
+
+.input-moderno:focus {    --->>Seudoclase  (:)
+	border-bottom: 1px solid #5f5f5f;
+}
+
+.input-moderno::placeholder { 	 --->>Seudoelemento (Coloca nombre por defecto en el input)
+	color: #c2c2c2;
+}
+
+#############################################################################################
+
+.input-background {
+	background-color: blue;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	outline: none;
+	color: white;
+	box-shadow: 0 0 10px #ccc
+}
+
+.input-background::placeholder {
+	color: #ccc;
+}
+
+######################################################################################
+
+.input-search {
+	padding: 10px;
+	padding-left: 30px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px;
+	background-image: url('../img/searcIcon.png');
+	background-repeat: no-repeat;
+	background-position: 5px;
+}
+
+####################################################################
+
+<textarea name="descripcion"></textarea>
+
+textarea {
+	resize: (both,horizontal,vertical)
+}
+
+###############################################
+<select>
+	<option>Opción 1</option>
+	<option>Opción 2</option>
+	<option>Opción 3</option>
+</select>
+
+_____________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

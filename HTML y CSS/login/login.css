@@ -1,0 +1,169 @@
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 450px;
+}
+
+.buttons {
+    display: flex;
+    align-self: flex-start;
+    gap: 20px;
+}
+
+.google {
+    background-color: rgb(66,133,244);
+    color:white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.google picture {
+    width: 36px;
+    height: 36px;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+
+.google span {
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.google picture img {
+    width: 80%;
+    padding: 5px;
+}
+
+.google:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.twiter picture img {
+    width: 36px;
+    height: 36px;
+    border-radius: 2px;
+}
+
+.twiter {
+    border: none;
+    padding: 1px;
+}
+.twiter:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.separador {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separador hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separador span {
+    color: #bbb;
+}
+
+.seccion-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label span {
+    font-weight: 700;
+}
+
+label input {
+    width: 90%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.3s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #36283a;
+}
+
+.seccion-inputs label input {
+    width: 80%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+
+}
+
+.seccion-inputs label input:hover {
+    background-color: #f3f3f4;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #36283a;
+    transition: background-color 0.3s, border 0.2s, box-shadow 0.2s;
+}
+
+.checkbox-label {
+    display: flex;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 16px;
+    cursor: pointer;
+}
+
+.checkbox-label span {
+    font-weight: 400;
+}
+
+.btn-submit {
+    background-color: #EA4C89;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    opacity: 0.75;
+}

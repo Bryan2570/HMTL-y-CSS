@@ -1,0 +1,59 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+}
+
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(97, 156, 207);
+    /*transition: transform 1s ease-in 2s;*/
+    animation: traslacion 4s ease-in-out infinite forwards alternate;
+}
+
+.padre:hover .hijo {
+    /* transform: translate(100%);
+    background-color: blueviolet; */
+    /*animation: traslacion 4s ease-in-out infinite forwards alternate;*/
+    animation-play-state: paused;  /*--->>pausar animacion cuando hacemos hover  */
+}
+
+@keyframes traslacion {
+    0% {
+        background-color: rgb(42, 165, 67);
+        transform: translateX(0%) translateY(0%) ;
+    }
+    25%{
+        background-color: chartreuse;
+        transform: translateX(50%) translateY(50%);
+    } 
+    50%{
+        background-color: red;
+        transform: translateX(100%) translateY(0%);
+    }
+    65%{
+        background-color: cornsilk;
+        transform: translateX(50%) translateY(50%);
+    }
+    75%{
+        background-color: crimson;
+        transform: translateX(100%) translateY(100%);
+    }
+    82% {
+        background-color: darkred;
+        transform: translateX(50%) translateY(50%);
+    }
+    85% {
+        background-color: darkred;
+        transform: translateX(0) translateY(100%);
+    }
+    90% {
+        background-color: darkgoldenrod;
+        transform: translateX(50%) translateY(50%);
+    }
+    100%{
+        background-color: chocolate;
+        transform: translateX(0%) translateY(0%);
+    }
+}
